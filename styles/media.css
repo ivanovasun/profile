@@ -1,0 +1,252 @@
+@media (width <= 768px) {
+    .page {
+        padding-inline: 18.3vw;
+    }
+
+    .header {
+        padding-block-start: 10.8%;
+        padding-block-end: 13.89%;
+    }
+
+    .header::after {
+        opacity: 0.3;
+    }
+
+    .header__title {
+        font-size: clamp(2.5rem, 1.875rem + 2.7778vw, 3.125rem);
+        padding: 10px;
+        line-height: 110%;
+    }
+
+    .header__title::after {
+        font-size: clamp(1.125rem, 0.25rem + 3.8889vw, 2rem);
+        bottom: 1em;
+    }
+
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .header__nav__button-link {
+        inline-size: 147.4px;
+        block-size: 41px;
+        font-size: 18px;
+    }
+
+    .main {
+        gap: 70px;
+        padding-block-end: 60px;
+    }
+
+    .projects {
+        padding-block-start: 15px;
+    }
+
+    .wrapper-projects {
+        display: flex;
+        justify-content: center;
+        padding: 28.5px 30.5px;
+    }
+
+    .projects__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        max-inline-size: 432px;
+    }
+
+    .projects__list-item-img {
+        min-inline-size: 240px;
+    }
+
+    .projects__list-item_content {
+        padding: 25px;
+        block-size: 70%;
+    }
+
+    .card__list-item_content {
+        block-size: 50%;
+    }
+
+    .card__list-item_content-paragraph {
+        font-size: clamp(1.125rem, 0.875rem + 1.1111vw, 1.375rem);
+    }
+
+    .skills__about-me {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .skills {
+        gap: 24px;
+        inline-size: 100%;
+    }
+
+    .skills__additional-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .skills__paragraph {
+        font-size: clamp(1.125rem, 0.6875rem + 1.9444vw, 1.5625rem);
+    }
+
+    .wrapper-skills {
+        padding: 10px;
+        inline-size: 100%;
+    }
+
+    .skills__stec-img {
+        max-inline-size: 60px;
+        max-block-size: 70px;
+    }
+
+    .skills__program-img {
+        max-inline-size: 70px;
+    }
+
+    .wrapper-about-me {
+        padding: 4vw 3.5vw 3.5vw;
+    }
+
+    .about-me {
+        gap: 24px;
+    }
+
+    .about-me__quotation-text {
+        font-size: clamp(1.125rem, 0.875rem + 1.1111vw, 1.375rem);
+        padding-bottom: 22px;
+    }
+
+    .about-me__quotation-text::before {
+        content: '"';
+        font-size: clamp(2.1875rem, 1.9792rem + 0.9259vw, 2.8125rem);
+        position: absolute;
+        top: -15px;
+        left: -15px;
+    }
+
+    .contacts-card {
+        font-size: clamp(1.125rem, 0.5625rem + 2.5vw, 1.6875rem);
+        padding: 0.6em;
+    }
+
+    .page.theme_light .footer__paragraph {
+        color: var(--color-text);
+        font-weight: bold;
+    }
+
+    .popup__close {
+        background-size: 28px 28px;
+        right: -1px;
+    }
+    
+    .popup__image {
+        max-width: 100%;
+        border-radius: 30px;
+    }
+
+    .popup__wrapper {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .popup__caption {
+        font-size: clamp(0.9375rem, 0.625rem + 1.3889vw, 1.25rem);
+    }
+
+    .popup__img-gh {
+        max-inline-size: 37px;
+        inline-size: 100%;
+        aspect-ratio: 1 / 1;
+    }
+}
+
+@media (width <=375px) {
+    .header {
+        gap: 10.5vw;
+        inline-size: 100vw;
+    }
+
+    .header__title {
+        padding: 0;
+    }
+
+    .page {
+        padding-inline: 59px;
+    }
+
+    .main {
+        gap: 50px;
+        padding-block-end: 40px;
+    }
+
+    .projects {
+        padding-block-start: 5px;
+    }
+
+    .wrapper-projects {
+        max-inline-size: calc(100% + (45px / 2));
+        inline-size: 100%;
+        padding: 12px 22px;
+    }
+
+    .projects__list {
+        max-inline-size: 240px;
+    }
+
+    .projects__list-item_content {
+        padding: 10px;
+        block-size: 100%;
+    }
+
+    .skills__about-me {
+        gap: 50px;
+    }
+
+    .skills__additional-wrapper {
+        display: flex;
+        gap: 15px;
+    }
+
+    .wrapper-skills {
+        padding: 5px 2px;
+    }
+
+    .skills__stec-img {
+        max-inline-size: 45px;
+        max-block-size: 55px;
+    }
+
+    .skills__program-img {
+        max-inline-size: 50px;
+    }
+
+    .wrapper-about-me {
+        padding: 10vw 5vw;
+    }
+
+    .about-me__quotation-text {
+        padding-bottom: 20px;
+    }
+
+    .about-me__quotation-img {
+        max-inline-size: 55px;
+        aspect-ratio: 1/1;
+        inline-size: 100%;
+    }
+
+    .contacts-card {
+        padding: 0.95em;
+    }
+
+    .popup__wrapper {
+        gap: 10px;
+        padding: 10px;
+    }
+}
