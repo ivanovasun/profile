@@ -1,5 +1,4 @@
-const themeButtons = document.querySelectorAll('.theme-menu__button');
-
+export function handlerChamgeTheme(themeButtons) {
 themeButtons.forEach((button) => {
   button.addEventListener('click', () => {
     themeButtons.forEach((btn) => {
@@ -19,6 +18,7 @@ themeButtons.forEach((button) => {
     button.setAttribute('disabled', true);
   });
 });
+}
 
 function changeTheme(theme) {
   document.body.className = 'page';
@@ -26,7 +26,7 @@ function changeTheme(theme) {
   localStorage.setItem('theme', theme);
 }
 
-function initTheme() {
+export function initTheme(themeButtons) {
   const theme = localStorage.getItem('theme');
   if (theme) {
     changeTheme(theme);
@@ -41,6 +41,4 @@ function initTheme() {
       .querySelector(`.theme-menu-button_type_${theme}`)
       .setAttribute('disabled', true);
   }
-}
-
-initTheme();
+};
