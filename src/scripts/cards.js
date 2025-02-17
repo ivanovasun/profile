@@ -2,7 +2,7 @@ import firstCaseImg from '../images/1prj.png';
 import secondCaseImg from '../images/2 prj.png';
 import thirdCaseImg from '../images/3prj.png';
 import fourthCaseImg from '../images/4prj.png';
-import fifthCaseImg from '../images/5prj.png'
+import fifthCaseImg from '../images/5prj.jpg'
 
 export const initialCards = [
     {
@@ -38,7 +38,7 @@ export const initialCards = [
       description_key_word: 'Web-приложение магазина',
       description: 'Проектирование архитектуры и реализация Web-приложения онлайн магизна с использованием TS по принципам ОПП',
       link_gh: 'https://github.com/ivanovasun/web-larek-frontend.git',
-      link: '',
+      link: 'https://ivanovasun.github.io/web-larek-frontend/',
     },
 ];
 
